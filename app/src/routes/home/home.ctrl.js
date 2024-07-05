@@ -2,7 +2,7 @@
 
 const users = {
     id : ["woorimIT", "개발", "팀장"],
-    psword : ["woori", "개발2", "팀장2"],
+    psword : ["1", "2", "3"],
 };
 
 

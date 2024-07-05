@@ -23,7 +23,19 @@ function login() {
     })
     .then((res) => res.json())
     // .then((res) => console.log(res));
-    .then(console.log);
+    // .then(console.log);
+    .then((res) => {
+        if (res.seccess == 'true') {
+            // alert(res.seccess);
+            // location.href = "/";
+            location.href = "http://localhost:3000";
+        } else {
+            alert(res.msg);
+        }
+    })
+    .catch((err) => {
+        console.error(new Error("에러발생"));
+    });
     // console.log(req);
     // console.log(JSON.stringify(req));
 }
