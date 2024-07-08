@@ -25,16 +25,18 @@ function login() {
     // .then((res) => console.log(res));
     // .then(console.log);
     .then((res) => {
-        if (res.seccess == 'true') {
+        if (res.seccess) {
             // alert(res.seccess);
-            // location.href = "/";
-            location.href = "http://localhost:3000";
+            // document.location.href = "/";
+            // location.href = "http://localhost:3000";
+            
+            alert(res.msg);
         } else {
             alert(res.msg);
         }
     })
     .catch((err) => {
-        console.error(new Error("에러발생"));
+        console.error(new Error("에러발생 !!!"));
     });
     // console.log(req);
     // console.log(JSON.stringify(req));
